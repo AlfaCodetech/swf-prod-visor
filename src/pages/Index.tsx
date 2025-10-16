@@ -86,37 +86,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-card border-b border-border shadow-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
-                <Activity className="w-7 h-7 text-primary" />
-                Dashboard SWF
-              </h1>
-              <p className="text-sm text-muted-foreground mt-1">
-                Controle de Produção Industrial
-              </p>
-            </div>
-            <div className="text-right">
-              <p className="text-sm text-muted-foreground">Hoje</p>
-              <p className="text-lg font-semibold text-foreground">
-                {new Date().toLocaleDateString('pt-BR', { 
-                  weekday: 'long', 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
-                })}
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-6 py-8">
+    <div className="bg-background p-6 md:p-8">
         {/* Indicadores */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <CardIndicador
@@ -179,16 +149,15 @@ const Index = () => {
         {/* Tabela de Produções */}
         <TabelaProducoes producoes={dados.ultimasProducoes} />
 
-        {/* Informação sobre conexão com banco */}
-        <div className="mt-8 p-6 bg-muted/50 border-2 border-dashed border-border rounded-lg text-center">
-          <p className="text-muted-foreground mb-2">
-            💡 <strong>Conecte ao banco de dados</strong> para registrar e visualizar produções reais
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Os dados acima são exemplos. Configure o Lovable Cloud para integração completa.
-          </p>
-        </div>
-      </main>
+      {/* Informação sobre conexão com banco */}
+      <div className="mt-8 p-6 bg-muted/50 border-2 border-dashed border-border rounded-lg text-center">
+        <p className="text-muted-foreground mb-2">
+          💡 <strong>Conecte ao banco de dados</strong> para registrar e visualizar produções reais
+        </p>
+        <p className="text-sm text-muted-foreground">
+          Os dados acima são exemplos. Configure o Lovable Cloud para integração completa.
+        </p>
+      </div>
     </div>
   );
 };
