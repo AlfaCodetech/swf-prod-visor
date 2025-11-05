@@ -54,12 +54,12 @@ All colors MUST be HSL.
     --shadow-card: 0 2px 8px hsl(220 20% 15% / 0.08);
     --shadow-elevated: 0 8px 24px hsl(220 20% 15% / 0.12);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 20% 25%;
     --sidebar-primary: 24 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 24 95% 96%;
-    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-accent: 24 95% 95%;
+    --sidebar-accent-foreground: 220 20% 25%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 24 95% 53%;
   }
